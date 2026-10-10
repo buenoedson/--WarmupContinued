@@ -1,11 +1,19 @@
 ## Interface: 120100
+## Title: |cff00ccffWarmup Continued|r
+## Title-ptBR: |cff00ccffWarmup Continued|r
+## Notes: Tracks how long between addon loadup events and memory usage.
+## Notes-ptBR: Rastreia o tempo e o consumo de memória durante o carregamento de addons.
+## Author: buenoedson
+## Version: 12.1.0
+## IconTexture: Interface\Icons\INV_Misc_PocketWatch_01
+## Category: Development Tools
+## Category-ptBR: Ferramentas de Desenvolvimento
 ## DefaultState: enabled
-## Title: Warmup Continued
-## Notes: Tracks how long between addon loadup events
-## Author: tomchapin
-## X-Credits: Tekkub, Cybelorias/Dridzt, Phanx, Bezal1, ZZumMallen
-## X-Category: Development Tools
-## Version: 0.5.0
 ## SavedVariables: WarmupContinuedSV
+## AddonCompartmentFunc: WarmupContinued_OnAddonCompartmentClick
+
+## X-Credits: tomchapin, Tekkub, Cybelorias/Dridzt, Phanx, Bezal1, ZZumMallen
+## X-Category: Development Tools
+## X-License: All Rights Reserved
 
 WarmupContinued.lua

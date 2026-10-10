@@ -14,13 +14,15 @@ The process of hooking into every addon's loading process and forcing Lua's garb
 Usage: Enable it when you need to diagnose your addons, then disable it for normal gameplay.
 
 Features of This "Continued" Version
-Fully Updated: Works with modern World of Warcraft, including The War Within (11.0.2+).
-
-Modernized API: Uses current APIs for UI creation (BackdropTemplateMixin) and slash commands, removing deprecated code to ensure future compatibility.
-
-Clean Codebase: All new and modified code is commented in English for easier maintenance and understanding.
-
-New Profile: Uses a new SavedVariables profile (WarmupContinuedSV) to prevent conflicts with any older versions of Warmup you might have used.
+- **Fully Updated:** Works with modern World of Warcraft Retail (11.x and 12.1.0 Midnight).
+- **Graphical Dashboard:** Bar charts comparing load times across all installed addons, with separate breakdown for Blizzard built-in addons.
+- **Load Time History:** Hover over any addon to see a 20-load performance graph. View overall game load history across the last 50 sessions.
+- **Copy to Clipboard:** Dedicated text export mode to easily copy diagnostic timings.
+- **UI Scaling:** Customizable scale slider from 60% to 140%.
+- **Optional GC Profiling:** Garbage collection profiling is disabled by default for lightning-fast logins; toggle "Enable GC" on when detailed retained vs garbage memory breakdown is needed.
+- **Addon Compartment:** Integrated with modern minimap Addon Compartment menu.
+- **Zero UI Taint:** Uses Blizzard's secure hook functions (`hooksecurefunc`) to ensure full combat and protected UI stability.
+- **Isolated Profile:** Uses `WarmupContinuedSV` to prevent conflicts with legacy WarmUp data.
 
 Installation
 Since this is a community-updated version, it is not available on standard addon repositories. You must install it manually.

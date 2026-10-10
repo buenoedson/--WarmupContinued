@@ -1,0 +1,20 @@
+name: Package and Release
+
+on:
+  push:
+    tags:
+      - '**' # Dispara a action sempre que você criar uma Tag/Release
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Packager
+        uses: BigWigsMods/packager@v2

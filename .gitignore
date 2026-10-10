@@ -1,0 +1,13 @@
+# Configurações do VS Code e Language Servers
+.vscode/
+.luarc.json
+
+# Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Pastas de release geradas localmente (opcional)
+.release/
+HISTORICO_SESSAO.md
+sync.ffs_db
+logs/
